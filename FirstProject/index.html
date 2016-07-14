@@ -1,0 +1,185 @@
+<html>
+<head><title>
+FirstProject</title>
+<script>
+function pass_validation()
+	{
+	var firstpassword=document.getElementById("p1").value;  
+	var secondpassword=document.getElementById("p2").value;  
+	var ok= true;
+
+	if(firstpassword!=secondpassword)
+	{  
+	alert("Passwords don't match!");
+	ok= false;  
+	}  
+	else
+	{  
+	ok= true;  
+	}
+	return ok;  
+	}	 
+</script>
+<style>
+html
+ {
+  margin: 0px;
+padding: 0px;
+ box-sizing: border-box;
+  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ 
+
+body
+{
+margin: 0px;
+padding: 0px;
+}
+#main{
+width:100%;
+height:100%;
+background-color:magenta;
+}
+#first{
+width:100%;
+height:15%;
+background-color:red;
+float:left;
+
+}
+#f1{
+background-color:black;
+width:50%;
+height:100%;
+float:left;
+padding-top:30px;
+padding-left:30px;
+
+}
+#f2{
+background-color:black;
+width:50%;
+height:100%;
+float:left;
+padding-top:30px;
+padding-left:30px;
+}
+#second
+{
+width:100%;
+height:85%;
+float:left;
+background-color:cyan;
+}
+#third
+{
+width:50%;
+height:100%;
+float:left;
+background-color:blue;
+padding-top:40px;
+padding-left:50px;
+}
+#fourth{
+width:50%;
+height:100%;
+float:left;
+background-color:hot pink;
+padding-top:40px;
+padding-left:50px;
+}
+#ins1{
+width:20%;
+height:100%;
+float:left;
+}
+.b1{border: 2px solid red; border-radius:12px; padding: 15px 32px;text-align: center;text-color:maroon;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer}
+.b1:hover{background-color:red;transition-duration:0.4s;}
+#t1{
+
+border-spacing:15px;
+padding:15px;
+}	
+.button {
+    background-color: black; 
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="main">
+<div id="first">
+<div id="f1"><font size="6" color="white">Welcome to Quizathon </font></div>
+<div id="f2">
+<a href='index.html' class="button">Home</a>
+<a href='aboutus.html' class="button">About Us</a>
+<a href='contactus.html' class="button">Contact Us</a>
+<a href='missions.html' class="button">Missions</a>
+
+<img src="rat.jpg" width="100px" height="80px" alt="rat logo">
+</div>
+</div>
+<div id="second">
+<div id= "third">
+<font size="7">New User? Register NOW! </font>
+<br><br>
+<table id="t1" >
+<form action="servlet/Registration" onsubmit="return pass_validation()" method="get">
+<tr>
+<th id="td1" colspan="4" > Name: </th><td id="td1" colspan="4" ><input type="text" name="name" required="true"></td></tr>
+<tr>
+<th id="td1"colspan="4"> Father's name: </th><td id="td1" colspan="4"><input type="text" name="fname" required="true" ></td></tr>
+<tr>
+<th id="td1"colspan="4" > Mobile number: </th><td id="td1"colspan="4"><input type="text" name="mobile" required="true"></td></tr>
+<tr>
+<th id="td1" colspan="4" > Email id:</th><td id="td1" colspan="4"><input type="email" name="email" required="true"></td></tr>
+<tr>
+<th id="td1"colspan="4"> Username: </th><td id="td1" colspan="4"><input type="text" name="uname" required="true" ></td></tr>
+<tr>
+<th id="td1" colspan="4">Password: </th><td id="td1" colspan="4"><input type="password" id="p1"name="pass" required="true" ></td></tr>
+<tr>
+<th id="td1" colspan="4" >Confirm Password: </th><td id="td1" colspan="4"><input type="password" id="p2" name="cpass" required="true"></td></tr>
+<br>
+<th id="td1" colspan="4" >User Type: </th><td id="td1" colspan="4"><input type="text" name="utype" value="Student" readonly="true"></td></tr>
+<br>
+<tr><th colspan="4" ><input type="submit" class="b1" value="Register"></th><td>  </td></tr>
+</form>
+</table>
+</div>
+<div id="fourth">
+<font size="7">Already a user? Login NOW! </font>
+<br><br>
+<table id="t1" >
+<form action="servlet/Login" method="get">
+<tr>
+<th id="td1"colspan="4"> Username: </th><td id="td1" colspan="4"><input type="text" name="username"></td></tr>
+<tr>
+<th id="td1" colspan="4">Password: </th><td id="td1" colspan="4"><input type="text" name="password"></td></tr>
+<br>
+<tr><th colspan="4"><input type="submit" class="b1" value="Log in"></th><td>  </td></tr>
+</form>
+</table>
+
+</div>
+</div>
+</div>
+</body>
+</html>

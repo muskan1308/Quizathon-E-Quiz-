@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.P;
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  
+	
+  <servlet>
+  <servlet-name>Registration</servlet-name>
+  <servlet-class>Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Registration</servlet-name>
+  <url-pattern>/servlet/Registration</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>JavaQuestions</servlet-name>
+  <servlet-class>JavaQuestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>JavaQuestions</servlet-name>
+  <url-pattern>/servlet/JavaQuestions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>cppquestions</servlet-name>
+  <servlet-class>cppquestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cppquestions</servlet-name>
+  <url-pattern>/servlet/cppquestions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>cquestions</servlet-name>
+  <servlet-class>cquestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cquestions</servlet-name>
+  <url-pattern>/servlet/cquestions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Checkpoint</servlet-name>
+  <servlet-class>Checkpoint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Checkpoint</servlet-name>
+  <url-pattern>/servlet/Checkpoint</url-pattern>
+  </servlet-mapping> 
+
+  <servlet>
+  <servlet-name>Sections</servlet-name>
+  <servlet-class>Sections</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Sections</servlet-name>
+  <url-pattern>/servlet/Sections</url-pattern>
+  </servlet-mapping> 
+ 
+  <servlet>
+  <servlet-name>Resultjava</servlet-name>
+  <servlet-class>Resultjava</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Resultjava</servlet-name>
+  <url-pattern>/servlet/Resultjava</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>Resultc</servlet-name>
+  <servlet-class>Resultc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Resultc</servlet-name>
+  <url-pattern>/servlet/Resultc</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>Resultcpp</servlet-name>
+  <servlet-class>Resultcpp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Resultcpp</servlet-name>
+  <url-pattern>/servlet/Resultcpp</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+  <servlet-name>Logout</servlet-name>
+  <servlet-class>Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Logout</servlet-name>
+  <url-pattern>/servlet/Logout</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+  <servlet-name>Admin</servlet-name>
+  <servlet-class>Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Admin</servlet-name>
+  <url-pattern>/servlet/Admin</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>ViewAllRecords</servlet-name>
+  <servlet-class>ViewAllRecords</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ViewAllRecords</servlet-name>
+  <url-pattern>/servlet/ViewAllRecords</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>AdminRegistration</servlet-name>
+  <servlet-class>AdminRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminRegistration</servlet-name>
+  <url-pattern>/servlet/AdminRegistration</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>Update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/servlet/Update</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Delete</servlet-name>
+  <url-pattern>/servlet/Delete</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>ManageExam</servlet-name>
+  <servlet-class>ManageExam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ManageExam</servlet-name>
+  <url-pattern>/servlet/ManageExam</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>UpdateJava</servlet-name>
+  <servlet-class>UpdateJava</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateJava</servlet-name>
+  <url-pattern>/servlet/UpdateJava</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>DeleteJava</servlet-name>
+  <servlet-class>DeleteJava</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteJava</servlet-name>
+  <url-pattern>/servlet/DeleteJava</url-pattern>
+  </servlet-mapping> 
+	<servlet>
+  <servlet-name>UpdateC</servlet-name>
+  <servlet-class>UpdateC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateC</servlet-name>
+  <url-pattern>/servlet/UpdateC</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>DeleteC</servlet-name>
+  <servlet-class>DeleteC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteC</servlet-name>
+  <url-pattern>/servlet/DeleteC</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>UpdateCpp</servlet-name>
+  <servlet-class>UpdateCpp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateCpp</servlet-name>
+  <url-pattern>/servlet/UpdateCpp</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>DeleteCpp</servlet-name>
+  <servlet-class>DeleteCpp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteCpp</servlet-name>
+  <url-pattern>/servlet/DeleteCpp</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>AddJava</servlet-name>
+  <servlet-class>AddJava</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddJava</servlet-name>
+  <url-pattern>/servlet/AddJava</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>AddC</servlet-name>
+  <servlet-class>AddC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddC</servlet-name>
+  <url-pattern>/servlet/AddC</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+  <servlet-name>AddCpp</servlet-name>
+  <servlet-class>AddCpp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddCpp</servlet-name>
+  <url-pattern>/servlet/AddCpp</url-pattern>
+  </servlet-mapping> 
+  
+  
+  
+  
+  
+</web-app>

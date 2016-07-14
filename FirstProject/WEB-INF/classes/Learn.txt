@@ -1,0 +1,16 @@
+Things I learnt while making my first project using HTML,CSS,
+JS, and our Servlets!:
+
+
+Designing:
+1. By default our width in div in css includes the sum of
+width+padding+border contrary to the popular belief of only width.
+So use,
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+in all your programs to avoid this problem.
+2.

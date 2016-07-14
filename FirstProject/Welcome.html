@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<style>
+html
+ {
+  margin: 0px;
+ padding: 0px;
+ 
+  box-sizing: border-box;
+  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ 
+
+body
+{
+margin: 0px;
+padding: 0px;
+}
+#main{
+background-color:hot-pink;
+width:100%;
+height:100%;
+}
+#first{
+background-color:black;
+height:15%;
+width:100%;
+float:left;
+}
+#f1{
+background-color:black;
+width:50%;
+height:100%;
+float:left;
+padding-top:30px;
+padding-left:30px;
+}
+#f2{
+background-color:black;
+width:50%;
+height:100%;
+float:left;
+
+}
+#f21{
+background-color:black;
+width:30%;
+height:100%;
+float:right;
+padding-top:0px;
+}
+#second{
+padding-left:30px;
+padding-top:30px;
+height:85%
+width:100%;
+float:left;
+}
+ol{
+margin-left:40px;
+
+}
+
+li{
+font-size:25px;
+color:blue;
+font-family:sans-serif;
+}
+.b1{border: 2px solid blue;border-radius:12px;padding: 15px 32px;text-align: center;text-color:black;display: inline-block;font-size: 16px;margin-left:500px;cursor: pointer;}
+.b1:hover{background-color: blue;transition-duration:0.4s;}
+.r1{
+margin-left:100px;
+}
+</style>
+</head>
+<body bgcolor="skyblue">
+<div id="main">
+<div id="first">
+<div id="f1"> <font size="7" color="white"> E-Quiz Information </font></div>
+<div id="f2"><div id="f21"><img src="rat.jpg" height="100px" width="200px" alt="RAT logo"></div></div>
+</div>
+<div id ="second">
+
+<font size="6" color="red" face="sans-serif"> Read the following information before proceeding :</font>
+<ol>
+<li> All the questions are compulsary.</li>
+<li> No cheating is allowed inside the examination hall. </li>
+<li> Once the online test begins, there is no way to go back. </li>
+<li> The test consists of three sections:  a) Java  b) C  c) C++ .</li>
+<li> Each section consists of 10 questions each. </li>
+<li> Answers can be single or multiple choice depending on the question. </li>
+<li> The test must be completed in one hour. </li>
+<li> For further queries, contact your invigilator. </li>
+<li> Each correct answer will get you 5 marks </li>
+</ol>
+<form action="servlet/Checkpoint "  method="get">
+<input type="radio" name="condition" class="r1" checked="checked" value="agree"><font size="5" color="black" /><b>I agree</b></font><br>
+<br>
+<input type="radio" name="condition" class="r1" value="disagree" ><font size="5" color="black" ><b>I disagree</b></font><br>
+<br>
+<input type="submit" value= "Proceed to quiz" class="b1">
+</form>
+</div>
+</div>
+</body>
+</html>
